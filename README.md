@@ -1,19 +1,19 @@
 # PyRedEngine
 
-Check out the package on PyPi: https://pypi.org/project/pyredengine/ \n
+Check out the package on PyPi: https://pypi.org/project/pyredengine/
 Check out the roadmap on Trello: https://trello.com/b/310qwZMs
 Check out the documentation: 
 
 ## Todo
 
-### Important 
+#### Important 
 - [ ] Create first documentation page on "Read the docs"
 - [ ] Move to trello board
 - [ ] Configure repo
 - [x] Make the engine independent of citrus cats
 - [x] Publish to PYPI
 - [ ] Upgrade to support for python 3.9+
-### GUI
+#### GUI
 - [ ] Maybe add hardware accel if realistic
 - [ ] Look at notes for researched optimisation techniques
 - [ ] Use faster rendering techniques
@@ -41,7 +41,7 @@ Check out the documentation:
 - [ ] Text outlines and strokes (semi, due to broken thickness controls) 
 	- [ ] Refactor strokes to be internal to text
 - [ ] Add support for CSS and HTML #SCRAPPED
-## Backend
+#### Backend
 - [ ] Basic networking
 - [ ] Always figure out ways to optimise
 - [ ] Make game loops less repetive ( Make use of globals & class methods) #WIP
