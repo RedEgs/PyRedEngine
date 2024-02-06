@@ -1,2 +1,0 @@
-[console_scripts]
-pyredengine-newproject = pyredengine.tools.cli:setup_project

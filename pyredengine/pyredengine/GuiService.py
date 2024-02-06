@@ -253,13 +253,13 @@ class SurfaceElement(Element):
         return self
 
 class TextElement(Element):
-    def __init__(self, position, text, size, color):
+    def __init__(self, position, text, size, color, font_path):
         super().__init__(position)
         self.text = text
         self.size = size
         self.color = color
         
-        self.default_font = pygame.font.Font("font.ttf", size)
+        self.default_font = pygame.font.Font(font_path, size)
         self.image = self.default_font.render(self.text, True, self.color)
 
     def update_position(self, position):

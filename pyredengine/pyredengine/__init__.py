@@ -107,13 +107,13 @@ class App():
         self.scenes.run_scene(self.event_queue) 
         self.entities.update()
         self.tweens.update()
-        self.debugs.update()
+        #self.debugs.update()
 
     def draw(self):
         self.guis.draw(screen)
         self.scenes.draw_scene()
         self.transitions.draw(screen)
-        self.debugs.draw(screen)
+        #self.debugs.draw(screen)
         
         
         pygame.display.flip()  
