@@ -1,8 +1,12 @@
 # PyRedEngine
 
+PyRedEngine is a small and performant engine made with pygame used for getting small games up and running quickly with little coding experience, useful for prototyping menu's or simple game mechanics for larger systems like unity or unreal games.
+
+Don't take this project too seriously as this was intended for use with all my mini pygame projects.
+
 Check out the package on PyPi: https://pypi.org/project/pyredengine/                                                                                         
 Check out the roadmap on Trello: https://trello.com/b/310qwZMs                                           
-Check out the documentation: 
+Check out the documentation: https://github.com/RedEgs/PyRedEngine/wiki
 
 ## Todo
 
