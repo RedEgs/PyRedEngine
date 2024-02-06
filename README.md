@@ -9,8 +9,8 @@ Check out the documentation:
 - [ ] Create first documentation page on "Read the docs"
 - [ ] Move to trello board
 - [ ] Configure repo
-- [ ] Make the engine independent of citrus cats
-- [ ] Publish to PYPI
+- [x] Make the engine independent of citrus cats
+- [x] Publish to PYPI
 - [ ] Upgrade to support for python 3.9+
 ### GUI
 - [ ] Maybe add hardware accel if realistic
