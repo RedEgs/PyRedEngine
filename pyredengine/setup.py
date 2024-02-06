@@ -2,11 +2,13 @@ import setuptools
 
 setuptools.setup(
   name='pyredengine',
-  version='0.0.2',
+  version='0.0.3',
   description='A simple pygame game engine',
   long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
   project_urls={
-    'Source': 'https://github.com/RedEgs/PyRedEngine'
+    'Source': 'https://github.com/RedEgs/PyRedEngine',
+    'Roadmap': 'https://trello.com/b/310qwZMs/pyredengine',
+    
   },
   author='RedEgs',
   author_email='tothemuun21@gmail.com',
