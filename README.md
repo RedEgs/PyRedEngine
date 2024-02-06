@@ -1,5 +1,7 @@
 # PyRedEngine
 
+Check out the package on PyPi: https://pypi.org/project/pyredengine/
+
 ## Todo
 
 ### Important 
