@@ -1,6 +1,6 @@
 import pygame, json, os, sys
 
-import Formatter as formatter
+from pyredengine import Formatter as Formatter
 
 def is_in_list(item, list):
     print(item)

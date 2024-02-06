@@ -1,3 +1,4 @@
 graft pyredengine
 include setup.py
+global-exclude *.py[cod]
 global-include *.txt *.py *.ttf 

@@ -1,19 +1,12 @@
 import pygame, json, os, sys
 
-
-current_dir = os.path.dirname(os.path.realpath(__file__))
-engine_dir = os.path.join(current_dir, '..')
-
-
-from ..engine.libs import Formatter as formatter
-from ..engine.libs import Utils as utils
-from ..engine.libs import EntityService as EntityService 
-from ..engine.libs import SceneService as SceneService 
-from ..engine.libs import GuiService as GuiService 
-from ..engine.libs import TweenService as TweenService
-from ..engine.libs import TransitionService as TransitionService
-from ..engine.libs import DebugService as DebugService
-from ..engine.libs import NetworkService as NetworkService
+from pyredengine import Formatter as Formatter
+from pyredengine import EntityService as EntityService 
+from pyredengine import SceneService as SceneService 
+from pyredengine import GuiService as GuiService 
+from pyredengine import TweenService as TweenService
+from pyredengine import TransitionService as TransitionService
+from pyredengine import DebugService as DebugService
 
 class App():
     """
@@ -44,7 +37,7 @@ class App():
         """
         # TODO Add support here for callbacks
         res, fps, caption, icon, settings = self.load_config()
-        screen_w, screen_h = formatter.get_dimensions(res)  # Window Height Constants
+        screen_w, screen_h = Formatter.get_dimensions(res)  # Window Height Constants
         
         screen = pygame.display.set_mode((screen_w, screen_h))  # Screen initialisation
         clock = pygame.time.Clock()
@@ -58,6 +51,7 @@ class App():
         
         
         return screen, clock, settings
+    
     def start_services(self):
         entities = EntityService.EntityService()
         scenes = SceneService.SceneService(self) 

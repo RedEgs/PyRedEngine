@@ -1,12 +1,12 @@
 import pytweening, pygame, sys, os
 
 
-import Formatter as formatter
-import Utils as utils
-import EntityService as EntityService 
-import SceneService as SceneService 
-import GuiService as GuiService 
-import TweenService as TweenService
+from pyredengine import Formatter as Formatter
+from pyredengine import Utils as Utils
+from pyredengine import EntityService as EntityService 
+from pyredengine import SceneService as SceneService 
+from pyredengine import GuiService as GuiService 
+from pyredengine import TweenService as TweenService
 
 class FPSCounter(GuiService.TextElement):
     def __init__(self, position, text, size, color):

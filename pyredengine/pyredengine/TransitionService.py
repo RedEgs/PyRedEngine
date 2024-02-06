@@ -1,8 +1,8 @@
 import pygame, json, os, sys
 
-import TweenService as TweenService
-import GuiService as GuiService
-import Utils as Utils
+from pyredengine import TweenService as TweenService
+from pyredengine import GuiService as GuiService
+from pyredengine import Utils as Utils
 
 class TransitionService():
     transitions = []

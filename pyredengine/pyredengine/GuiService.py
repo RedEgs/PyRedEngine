@@ -1,8 +1,8 @@
 import pytweening, pygame, time, sys, os
 from enum import Enum
 
-import Utils as utils
-import TweenService as TweenService
+from pyredengine import Utils as utils
+from pyredengine import TweenService as TweenService
 
 
 class GuiService():
@@ -14,7 +14,7 @@ class GuiService():
 
     @classmethod    
     def add_element(cls, element):
-        import SceneService as SceneService
+        from pyredengine import SceneService as SceneService
         
         memory_location = element.get_element_data()
         key = cls.element_index
@@ -26,7 +26,7 @@ class GuiService():
     
     @classmethod
     def add_event_element(cls, element):
-        import SceneService as SceneService
+        from pyredengine import SceneService as SceneService
         
         memory_location = element.get_element_data()
         key = cls.element_index
@@ -259,9 +259,7 @@ class TextElement(Element):
         self.size = size
         self.color = color
         
-        font_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'resources', 'font.ttf')
-
-        self.default_font = pygame.font.Font(font_dir, size)
+        self.default_font = pygame.font.Font("font.ttf", size)
         self.image = self.default_font.render(self.text, True, self.color)
 
     def update_position(self, position):

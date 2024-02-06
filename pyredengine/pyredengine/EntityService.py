@@ -1,6 +1,6 @@
 import pygame, json, os, sys
 
-import libs.Utils as utils
+from pyredengine import Utils as Utils
 
 
 

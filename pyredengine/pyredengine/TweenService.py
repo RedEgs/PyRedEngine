@@ -3,7 +3,7 @@ import pygame, pytweening, json, os, sys
 from typing import Callable
 from dataclasses import dataclass
 
-import Utils as Utils
+from pyredengine import Utils as Utils
 
 class TweenService():
     tweens = []
