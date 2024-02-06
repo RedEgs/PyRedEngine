@@ -6,6 +6,9 @@ Check out the documentation:
 ## Todo
 
 ### Important 
+- [ ] Create first documentation page on "Read the docs"
+- [ ] Move to trello board
+- [ ] Configure repo
 - [ ] Make the engine independent of citrus cats
 - [ ] Publish to PYPI
 - [ ] Upgrade to support for python 3.9+
