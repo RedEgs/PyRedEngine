@@ -8,7 +8,7 @@ Check out the package on PyPi: https://pypi.org/project/pyredengine/
 Check out the roadmap on Trello: https://trello.com/b/310qwZMs                                           
 Check out the documentation: https://github.com/RedEgs/PyRedEngine/wiki
 
-## Todo
+## Todo(No longer accurate)
 
 #### Important 
 - [ ] Create first documentation page on "Read the docs"
