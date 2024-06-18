@@ -1,4 +1,4 @@
-from engine.libs.Services import Service
+from pyredengine.Services import Service
 from pygame import gfxdraw
 import random, pygame, json, os, sys
 

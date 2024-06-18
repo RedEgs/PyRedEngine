@@ -1,10 +1,10 @@
-from engine.libs.Services import Service
+from pyredengine.Services import Service
 import pygame, json, os, sys
 
-import engine.libs.Utils as utils
-import engine.libs.GuiService as GuiService
-import engine.libs.TweenService as TweenService
-import engine.libs.TransitionService as TransitionService
+import pyredengine.Utils as utils
+import pyredengine.GuiService as GuiService
+import pyredengine.TweenService as TweenService
+import pyredengine.TransitionService as TransitionService
 
 
 class SceneService(Service):

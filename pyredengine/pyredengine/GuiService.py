@@ -1,14 +1,14 @@
 import pygame.gfxdraw
-from engine.libs.Services import Service
+from pyredengine.Services import Service
 import pytweening, pygame, time, sys, os, math
 from enum import Enum
 from colorama import Fore, Back, Style
 
 import functools
 
-import engine.libs.Utils as utils
-import engine.libs.ViewportModule as ViewportModule
-import engine.libs.CameraModule as CameraModule
+import pyredengine.Utils as utils
+import pyredengine.ViewportModule as ViewportModule
+import pyredengine.CameraModule as CameraModule
 
 class GuiSpaces(Enum):
     WORLD = "world" 
@@ -504,12 +504,12 @@ class PanelElement(Element):
         return rectangle
  
     def apply_outline(self, outline_color, position, thickness):
-        from engine.libs import SpecialEffectsModule
+        from pyredengine import SpecialEffectsModule
         
         return SpecialEffectsModule.aa_outline(self.image, (255,255,255), thickness)
         
     def apply_shadow(self, size):
-        from engine.libs import SpecialEffectsModule
+        from pyredengine import SpecialEffectsModule
         
         return SpecialEffectsModule.dropshadow(self.image, size)
         
@@ -1203,7 +1203,7 @@ class ButtonState(Enum):
 
 
 class ButtonElement(EventElement):
-    import engine.libs.TweenService as TweenService
+    import pyredengine.TweenService as TweenService
     def __init__(
         self,
         space,

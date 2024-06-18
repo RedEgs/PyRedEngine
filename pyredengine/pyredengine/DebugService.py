@@ -1,12 +1,12 @@
-from engine.libs.Services import Service
+from pyredengine.Services import Service
 import psutil, pygame, sys, os
 import threading, time
 
 
-import engine.libs.Utils as utils
-import engine.libs.SceneService as SceneService
-import engine.libs.GuiService as GuiService
-import engine.libs.TweenService as TweenService
+import pyredengine.Utils as utils
+import pyredengine.SceneService as SceneService
+import pyredengine.GuiService as GuiService
+import pyredengine.TweenService as TweenService
 
 class DebugService(Service):
     def __init__(self, app, clock):

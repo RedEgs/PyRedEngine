@@ -1,11 +1,16 @@
 import pygame, json, os, sys
 
-import engine.libs.SceneService as SceneService
-import engine.libs.GuiService as GuiService
-import engine.libs.TweenService as TweenService
-import engine.libs.TransitionService as TransitionService
-import engine.libs.DebugService as DebugService
-import engine.libs.ViewportModule as ViewportModule
+parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+print(parent_dir)
+sys.path.append(parent_dir)
+
+
+import pyredengine.SceneService as SceneService
+import pyredengine.GuiService as GuiService
+import pyredengine.TweenService as TweenService
+import pyredengine.TransitionService as TransitionService
+import pyredengine.DebugService as DebugService
+import pyredengine.ViewportModule as ViewportModule
  
 
         
@@ -125,6 +130,10 @@ class App:
         event = pygame.event.Event(pygame.KEYDOWN, key=key)
         pygame.event.post(event)
         
+    def send_mouse(self, coords):
+        pass
+    
+    
 
     def run(self):
         fps = self.app_settings["max-fps"]
@@ -179,6 +188,10 @@ class App:
         self.scene_service.draw_scene(self.viewport.get_main_camera_surface())
         self.gui_service.draw(self.get_screen(), self.viewport, self.get_current_scene())
         self.viewport.draw()
+
+    def close_game(self):
+        pygame.quit()
+        sys.exit()
 
     def get_gui_service(self):
         return self.gui_service

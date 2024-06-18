@@ -1,4 +1,4 @@
-from engine.libs.Services import Service
+from pyredengine.Services import Service
 import pygame, json, os, sys
 
 import engine.libs.Utils as utils

@@ -1,8 +1,8 @@
 import random, pygame, moderngl, json, os, sys
 
 from array import array
-from engine.libs.Services import Service
-from engine.libs import CameraModule
+from pyredengine.Services import Service
+from pyredengine import CameraModule
 
 
 class Viewport(Service):
@@ -59,7 +59,7 @@ class Viewport(Service):
         Loads the display for the pygame window, with resolution from config
         """   
         # Initialise and create the actual display
-        if not self.app._qt_mode:
+        if not self.app._preview_mode:
             pygame.display.set_mode(
                 (int(self.screen_w), int(self.screen_h)), depth=16, flags=pygame.DOUBLEBUF
             ) 

@@ -1,9 +1,9 @@
-from engine.libs.Services import Service
+from pyredengine.Services import Service
 import pygame, pytweening, json, os, sys
 
-import engine.libs.TweenService as TweenService
-import engine.libs.GuiService as GuiService
-import engine.libs.Utils as Utils
+import pyredengine.TweenService as TweenService
+import pyredengine.GuiService as GuiService
+import pyredengine.Utils as Utils
 
 
 class TransitionService(Service):
