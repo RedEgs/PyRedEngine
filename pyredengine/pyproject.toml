@@ -1,9 +1,5 @@
 [project]
 name = "pyredengine"
-dynamic = ["0.0.2"]
+version = "0.1.0"
 dependencies = ['pygame-ce', 'pytweening']
 requires-python = ">= 3.8, < 3.11"
-
-[build-system]
-requires = ["setuptools >= 61.0"]
-build-backend = "setuptools.build_meta"

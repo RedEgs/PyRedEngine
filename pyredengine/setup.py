@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
   name='pyredengine',
-  version='0.0.3',
+  version='0.1.0',
   description='A simple pygame game engine',
   long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
   project_urls={
@@ -22,7 +22,7 @@ setuptools.setup(
   ],
   keywords='engine', 
   packages=setuptools.find_packages(),
-  install_requires=['pygame-ce', 'pytweening'], 
+  install_requires=['pygame-ce', 'pytweening', 'numpy'], 
   python_requires = "> 3.8, < 3.11",
   include_package_data=True,
   entry_points = {"console_scripts": ["pyredengine-newproject = pyredengine.tools.cli:setup_project"]},
