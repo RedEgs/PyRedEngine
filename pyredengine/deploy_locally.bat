@@ -1,3 +1,2 @@
-py setup.py install
-py setup.py build
-pip install .
+pip uninstall pyredengine
+python -m pip install -e .
