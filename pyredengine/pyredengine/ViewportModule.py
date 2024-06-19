@@ -73,7 +73,7 @@ class Viewport(Service):
             os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (-1000, -1000)
         
             pygame.display.set_mode(
-                (int(self.screen_w), int(self.screen_h)), depth=16, flags=pygame.NOFRAME
+                (int(self.screen_w), int(self.screen_h)), flags=pygame.NOFRAME
             ) 
             self.screen = pygame.display.get_surface()
             
@@ -209,9 +209,9 @@ class Viewport(Service):
         #self.screen.blit(self.get_main_camera_surface(), (0,0), area=self.get_camera_bounds())
             
     def draw_display_default(self):
-        self.screen.blit(self.get_main_camera_surface(), (0,0), area=self.get_camera_bounds())
-        pygame.display.update(self.get_camera_bounds())
-                    
+        self.screen.blit(self.get_main_camera_surface(), (0,0))
+        #pygame.display.update(self.get_camera_bounds())
+        pygame.display.flip()            
     def draw(self): 
         self.app.transition_service.draw(self.get_main_camera_surface())
         self.draw_screen()

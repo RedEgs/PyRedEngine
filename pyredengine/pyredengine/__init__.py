@@ -1,4 +1,4 @@
-import pygame, json, os, sys
+import pygame, json, os, sys, importlib
 
 parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 print(parent_dir)
@@ -132,8 +132,6 @@ class App:
         
     def send_mouse(self, coords):
         pass
-    
-    
 
     def run(self):
         fps = self.app_settings["max-fps"]
@@ -151,12 +149,10 @@ class App:
         fps = self.app_settings["max-fps"]
         
         while True:
+            self.clock.tick()
             self.events()
             self.update()
             self.draw()
-            
-            self.delta_time = self.clock.tick(100000) * .001
-            self.elapsed_time += self.delta_time         
             
             yield self.get_screen()
             
@@ -191,8 +187,9 @@ class App:
 
     def close_game(self):
         pygame.quit()
-        sys.exit()
+        
 
+        
     def get_gui_service(self):
         return self.gui_service
 
