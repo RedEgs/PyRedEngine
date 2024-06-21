@@ -12,6 +12,7 @@ pyredengine/GuiService.py
 pyredengine/Maths.py
 pyredengine/NetworkService.py
 pyredengine/ParticleModule.py
+pyredengine/PreviewMain.py
 pyredengine/SceneService.py
 pyredengine/Services.py
 pyredengine/SpecialEffectsModule.py
