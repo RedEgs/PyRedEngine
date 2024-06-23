@@ -34,7 +34,7 @@ class MainGame:
         """
     
         if type == 1: # Keyboard press
-            event = pygame.event.Event(pygame.KEYDOWN, key=key)
+            event = pygame.event.Event(pygame.KEYDOWN, {'key': key})
             pygame.event.post(event)
             
         elif type == 2: # Mouse Movement
@@ -80,6 +80,14 @@ class MainGame:
     def draw(self):
         """Custom drawing logic here"""
         pygame.display.flip()
+    
+    def on_reload(self):
+        pass
+        
+        
+    def on_save(self):
+        pass
+    
     
     def run_game(self):
         """Handles the running of the game"""
