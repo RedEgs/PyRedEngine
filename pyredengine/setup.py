@@ -23,7 +23,7 @@ setuptools.setup(
   keywords='engine', 
   packages=setuptools.find_packages(),
   install_requires=['pygame-ce', 'pytweening', 'numpy'], 
-  python_requires = "> 3.8, < 3.11",
+  python_requires = "> 3.8, < 3.12.6",
   include_package_data=True,
   entry_points = {"console_scripts": ["pyredengine-newproject = pyredengine.tools.cli:setup_project"]},
 )

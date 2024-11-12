@@ -21,7 +21,6 @@ pyredengine/TweenService.py
 pyredengine/Utils.py
 pyredengine/ViewportModule.py
 pyredengine/__init__.py
-pyredengine/utils.py
 pyredengine.egg-info/PKG-INFO
 pyredengine.egg-info/SOURCES.txt
 pyredengine.egg-info/dependency_links.txt
