@@ -197,16 +197,17 @@ _monkey_patch()
 
 
 class MainGame:
-    def __init__(self, fullscreen) -> None:
+    def __init__(self, fullscreen, resolution = [1280, 720]) -> None:
         pygame.init()
 
         self._fullscreen = fullscreen
-        self._init_display()
+        self._init_display(resolution=resolution)
         self.clock = pygame.time.Clock()
         self.run = True
         
         self.mouse_pos = (0,0) 
         self._engine_mode = True
+        self._ms = 0
         
 
 
@@ -242,7 +243,6 @@ class MainGame:
            Mouse = x, y, button_down(type)
         
         """
-    
         if type == 1: # Keyboard press
             event = pygame.event.Event(pygame.KEYDOWN, {'key': pygame.key.key_code(key)})
             pygame.event.post(event)
@@ -300,7 +300,7 @@ class MainGame:
     
     def run_game(self):
         """Handles the running of the game"""
-
+        self._ms = 0
         while self.run: # Don't touch
             EngineStats()._engine_previous_blit_count = EngineStats()._engine_current_blit_count
             EngineStats()._engine_previous_draw_count = EngineStats()._engine_current_draw_count
