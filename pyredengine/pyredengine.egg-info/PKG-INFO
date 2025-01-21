@@ -13,7 +13,7 @@ Classifier: Intended Audience :: Education
 Classifier: Operating System :: Microsoft :: Windows :: Windows 10
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3.9
-Requires-Python: > 3.8, < 3.12.6
+Requires-Python: > 3.8, < 3.13.0
 License-File: LICENSE.txt
 Requires-Dist: pygame-ce
 Requires-Dist: pytweening
